@@ -24,10 +24,6 @@ public class TransferFileController {
     @PostMapping({"/switch"})
     public void uploadFile(@RequestParam("file") MultipartFile multipartFile) {
 
-//        String destPath = "/demo/temp/";
-
-//        File file = convertUsingNIO(multipartFile, destPath);
-
         String destinationDir = "/demo/output/";
 
         File destinationDirFile = new File(destinationDir);
